@@ -26,9 +26,9 @@ export default function Experience() {
       <SectionHeading>My Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => {
-          const { ref, inView } = useInView({
-            threshold: 0 
-          });
+          // const { ref, inView } = useInView({
+          //   threshold: 0 
+          // });
           return (
             <div key={index} ref={ref} className="vertical-timeline-element">
               <VerticalTimelineElement

@@ -24,9 +24,10 @@ const RoleText = () => {
       const interval = setInterval(() => {
         setTextIndex(prevIndex => (prevIndex + 1) % texts.length);
       }, 3000); // Change text every 3 seconds
-
+    
       return () => clearInterval(interval);
-    }, []);
+    }, [texts.length]); // Include texts.length in the dependency array
+    
 
     useEffect(() => {
       if (textRef.current) {
@@ -63,7 +64,6 @@ const RoleText = () => {
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  
     return (
       <section
         ref={ref}
@@ -98,8 +98,8 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold block ">Hello, I'm Rolano. </span> 
-          <span className="">I'm a{" "}<RoleText /> 
+          <span className="font-bold block ">Hello, I&apos;m Rolano. </span> 
+          <span className="">I&apos;m a{" "}<RoleText /> 
           with <span className="font-bold">3+ years</span> of experience.</span>
           <span className="block">I enjoy building <span className="italic">sites & apps</span>.</span>
         </motion.h1>
