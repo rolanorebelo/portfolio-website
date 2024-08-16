@@ -1,10 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import filesharingImg from "@/public/filesharing.png";
 import elderappImg from "@/public/elderapp.png";
 import flightdelayImg from "@/public/flightdelay.png";
@@ -14,7 +7,6 @@ import untLogo from "@/public/unt.png";
 import vit from "@/public/vit.png";
 import dlink from "@/public/dlink.jpg";
 import wipro from "@/public/wipro.png";
-import { Image } from "react-native-reanimated/lib/typescript/Animated";
 
 export const links = [
   {
