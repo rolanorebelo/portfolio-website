@@ -101,7 +101,7 @@ export default function Intro() {
           <span className="font-bold block ">Hello, I&apos;m Rolano. </span> 
           <span className="">I&apos;m a{" "}<RoleText /> 
           with <span className="font-bold">3+ years</span> of experience.</span>
-          <span className="block">I enjoy building <span className="italic">sites & apps</span>.</span>
+          <span className="block">I enjoy building <span className="italic">apps</span>.</span>
         </motion.h1>
   
         <motion.div
