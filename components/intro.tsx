@@ -95,7 +95,7 @@ export default function Intro() {
               }}
             >
               <Image
-                src="/profilepic.webp"
+                src="/profilepic.jpg"
                 alt="Ricardo portrait"
                 width="192"
                 height="192"
