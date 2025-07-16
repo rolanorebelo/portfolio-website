@@ -50,13 +50,12 @@ export default function Experience() {
                 date={item.date}
                 dateClassName="dateStyle"
                 icon={
-                  <Image 
-                    src={item.icon} 
-                    alt="Icon" 
-                    width={200} 
-                    height={100}
-                   
-                   
+                    <Image
+                    src={item.icon}
+                    alt="Icon"
+                    width={60}
+                    height={60}
+                    className="rounded-full object-cover border border-gray-300 dark:border-gray-700 bg-white"
                   />
                 }
                 iconStyle={{
