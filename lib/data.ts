@@ -7,6 +7,10 @@ import untLogo from "@/public/unt.png";
 import vit from "@/public/vit.png";
 import dlink from "@/public/dlink.jpg";
 import wipro from "@/public/wipro.png";
+import phylacticsLogo from "@/public/phylactics.png"; // Add your logo image to public/
+import replyquickLogo from "@/public/replyquickai.jpeg"; // Add your logo image to public/
+import fitness from "@/public/fitness_app.jpeg"
+import learning from "@/public/learning.jpg"
 
 export const links = [
   {
@@ -30,12 +34,40 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Awards",
+    hash: "#awards",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
 ] as const;
 
 export const experiencesData = [
+    {
+    title: "Software Developer Intern",
+    location: "ReplyQuickAI, Remote / Florida, USA",
+    description:
+      "Building an AI-powered telecom platform with GPT-4o, Twilio, Supabase, and Next.js. Developed intelligent features like Missed Call Text Rescue, Outbound Campaigns, and real-time CRM integration. Designed scalable front-end components and real-time booking workflows using Next.js and Tailwind CSS. Worked directly with the founder in agile sprints to refactor backend and improve system performance.",
+    icon: replyquickLogo,
+    date: "July 2025 – Present",
+  },
+  {
+    title: "Entry-Level AI/ML Engineer",
+    location: "Phylactics, Fort Worth, TX",
+    description:
+      "Developed a React.js and React Native-based AI healthcare app for symptom assessment. Integrated OpenAI GPT models with LangChain and FastAPI to provide contextual medical insights. Implemented RAG using vector databases and prompt engineering for accurate AI responses. Collaborated with UX teams to ensure medical clarity, safety, and compliance.",
+    icon: phylacticsLogo,
+    date: "June 2025 – Present",
+  },
+  {
+    title: "Teaching Assistant",
+    location: "University of North Texas, Denton, TX",
+    description:
+      "Supported 3 graduate-level courses, guiding 150+ students across software engineering, big data, and AI development. Led lab sessions and office hours, providing technical support and mentorship. Evaluated projects, provided feedback on code quality and system architecture, and collaborated with professors to design grading rubrics. Championed accessibility-focused practices.",
+    icon: untLogo,
+    date: "August 2024 – May 2025",
+  },
     {
       title: "Software Engineer",
       location: "Wipro Technologies, Bangalore, India",
@@ -62,7 +94,7 @@ export const educationData = [
       location: "University of North Texas, Denton, TX",
       description:
         "Expected May 2025. Relevant Courses: Software Engineering, Software Development with AI, ML, Analysis of Computer Algorithms, Intro to Big Data and Data Science.",
-      date: "Expected May 2025",
+      date: "May 2025",
       icon: untLogo,
     },
     {
@@ -78,6 +110,30 @@ export const educationData = [
 
   export const projectsData = [
     {
+    title: "Accessible Learning Assistant",
+    description:
+      "Built a responsive AI-driven tool using OCR and vector databases to process lecture content. Integrated LangChain and LLMs to enable real-time AI-driven conversations for students. Developed a retro-style quiz generator using NLP to improve knowledge retention.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "Azure", "LangChain", "NLP"],
+    imageUrl: learning,
+    demoLink: "",
+  },
+  {
+    title: "CipherShare - File Sharing App",
+    description:
+      "Developed a secure file-sharing application using Next.js 13 and React.js, enhancing performance and user experience. Utilized Tailwind CSS for a responsive UI. Integrated Firebase and Clerk for authentication and real-time data synchronization.",
+    tags: ["Next.js 13", "React.js", "Tailwind CSS", "Firebase", "Clerk"],
+    imageUrl: filesharingImg,
+    demoLink: "https://file-sharing-app-three-xi.vercel.app/",
+  },
+  {
+    title: "RehabFit",
+    description:
+      "AI-powered recovery assistant built after personal experience with gym injury. Tracks injury progress and provides adaptive gym workouts based on pain feedback. Integrates GPT-4o for personalized advice and LangChain for symptom-aware chat. Implements RAG for contextually relevant and real-time recovery support.",
+    tags: ["React.js", "Spring Boot", "OpenAI GPT-4o", "LangChain", "RAG", "PostgreSQL", "Docker"],
+    imageUrl: fitness,
+    demoLink: "",
+  },
+    {
       title: "Elderly Companion App",
       description:
         "Developed a mobile app with ReactNative and Expo, enhancing user engagement by 30%. Integrated Firebase for authentication and real-time data, improving sign-in and data access.",
@@ -85,14 +141,7 @@ export const educationData = [
       imageUrl: elderappImg, // Update with actual image
       demoLink: "https://youtu.be/-ZqYSnEtLQY?si=dJ5cmO2lr27UMDz5", // Add demo link
     },
-    {
-      title: "File Sharing App",
-      description:
-        "Created a file-sharing app using Next.js 13 and React.js with a responsive Tailwind CSS UI. Integrated Firebase and Clerk for secure authentication and real-time data synchronization.",
-      tags: ["Next.js 13", "React.js", "Tailwind CSS", "Firebase", "Clerk"],
-      imageUrl: filesharingImg, // Update with actual image
-      demoLink: "https://file-sharing-app-three-xi.vercel.app/", // Add demo link
-    },
+  
     {
       title: "Power Management System App",
       description:
@@ -147,5 +196,27 @@ export const skillsData = [
     "Jenkins",
     "AWS",
     "Azure",
+      "LangChain",
+  "GPT-4o",
+  "Supabase",
+  "Twilio"
   ] as const;
+
+export const awardsData = [
+  {
+    title: "Distinguished Graduate Student",
+    issuer: "University of North Texas",
+    date: "May 2025",
+    description:
+      "Recognized for academic excellence (4.0 GPA), impactful teaching assistantship, and leadership in technical communities.",
+  },
+  {
+    title: "Hackathon Winner – Best AI Project with Databricks Open Source",
+    issuer: "HackUNT 2024, Major League Hacking",
+    date: "Oct 2024",
+    description:
+      "Developed Mail Marvel, an AI-powered tool that classifies and organizes high-priority emails into categories like Important, Events, Pending Actions, and Job Searches, helping users prioritize tasks and manage time efficiently.",
+  },
+] as const;
+
   
