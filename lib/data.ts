@@ -117,6 +117,7 @@ export const educationData = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "Azure", "LangChain", "NLP"],
     imageUrl: learning,
     demoLink: "",
+    githubLink: "",
   },
   {
     title: "CipherShare - File Sharing App",
@@ -125,6 +126,7 @@ export const educationData = [
     tags: ["Next.js 13", "React.js", "Tailwind CSS", "Firebase", "Clerk"],
     imageUrl: filesharingImg,
     demoLink: "https://file-sharing-app-three-xi.vercel.app/",
+    githubLink: "",
   },
   {
     title: "RehabFit",
@@ -133,6 +135,7 @@ export const educationData = [
     tags: ["React", "Tailwind CSS", "Spring Boot", "Java 21", "PostgreSQL", "OpenAI GPT-4", "Pinecone", "Python", "Flask", "Sentence Transformers"],
     imageUrl: fitness,
     demoLink: "https://rehabfit.vercel.app/",
+    githubLink: "https://github.com/rolanorebelo/rehabfit",
   },
   {
     title: "FitFindr - AI-Powered Gym Recommendation System",
@@ -141,6 +144,7 @@ export const educationData = [
     tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion", "Recharts", "React Leaflet", "Axios", "FastAPI", "Google Maps API", "TextBlob", "Pydantic"],
     imageUrl: fitfindrImg,
     demoLink: "https://fitfindr.vercel.app/",
+    githubLink: "https://github.com/rolanorebelo/fitfindr",
   },
     {
       title: "Elderly Companion App",
@@ -149,6 +153,7 @@ export const educationData = [
       tags: ["ReactNative", "Expo", "Firebase", "Figma"],
       imageUrl: elderappImg, // Update with actual image
       demoLink: "https://youtu.be/-ZqYSnEtLQY?si=dJ5cmO2lr27UMDz5", // Add demo link
+      githubLink: "",
     },
   
     {
@@ -158,6 +163,7 @@ export const educationData = [
       tags: ["NodeJS", "ExpressJS", "MongoDB", "Socket.io"],
       imageUrl: powergridImg, // Update with actual image
       demoLink: "", // No demo link provided
+      githubLink: "",
     },
     {
       title: "Online Fashion Store",
@@ -166,6 +172,7 @@ export const educationData = [
       tags: ["ReactJS", "NodeJS", "MongoDB"],
       imageUrl: onlinefashionImg, // Update with actual image
       demoLink: "", // No demo link provided
+      githubLink: "",
     },
     {
       title: "Flight Delay Prediction using Big Data and Machine Learning",
@@ -174,6 +181,7 @@ export const educationData = [
       tags: ["Python", "Spark", "Hadoop", "Amazon EMR", "AWS Glue", "Scikit-learn"],
       imageUrl: flightdelayImg, // Update with actual image
       demoLink: "", // No demo link provided
+      githubLink: "",
     },
   ] as const;
   
