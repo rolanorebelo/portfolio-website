@@ -11,6 +11,7 @@ import phylacticsLogo from "@/public/phylactics.png"; // Add your logo image to 
 import replyquickLogo from "@/public/replyquickai.jpeg"; // Add your logo image to public/
 import fitness from "@/public/fitness_app.jpeg"
 import learning from "@/public/learning.jpg"
+import fitfindrImg from "@/public/fitfindr.png";
 
 export const links = [
   {
@@ -128,10 +129,18 @@ export const educationData = [
   {
     title: "RehabFit",
     description:
-      "AI-powered recovery assistant built after personal experience with gym injury. Tracks injury progress and provides adaptive gym workouts based on pain feedback. Integrates GPT-4o for personalized advice and LangChain for symptom-aware chat. Implements RAG for contextually relevant and real-time recovery support.",
-    tags: ["React.js", "Spring Boot", "OpenAI GPT-4o", "LangChain", "RAG", "PostgreSQL", "Docker"],
+      "An AI-powered injury-aware fitness application with personalized recovery tracking and recommendations. Features user authentication with JWT and Google OAuth, real-time progress tracking with charts, AI chatbot assistant powered by OpenAI GPT-4, video recommendations via YouTube API, dark mode support, and responsive mobile design.",
+    tags: ["React", "Tailwind CSS", "Spring Boot", "Java 21", "PostgreSQL", "OpenAI GPT-4", "Pinecone", "Python", "Flask", "Sentence Transformers"],
     imageUrl: fitness,
-    demoLink: "",
+    demoLink: "https://rehabfit.vercel.app/",
+  },
+  {
+    title: "FitFindr - AI-Powered Gym Recommendation System",
+    description:
+      "A modern, full-stack gym recommendation application that uses Natural Language Processing to analyze Google Reviews and provide personalized gym suggestions based on user preferences. Features interactive maps, analytics dashboard, custom filters, and mobile-first design.",
+    tags: ["Next.js 14", "TypeScript", "Tailwind CSS", "Framer Motion", "Recharts", "React Leaflet", "Axios", "FastAPI", "Google Maps API", "TextBlob", "Pydantic"],
+    imageUrl: fitfindrImg,
+    demoLink: "https://fitfindr.vercel.app/",
   },
     {
       title: "Elderly Companion App",
