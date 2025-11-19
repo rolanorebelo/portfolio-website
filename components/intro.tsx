@@ -82,7 +82,7 @@ export default function Intro() {
       <section
         ref={ref}
         id="home"
-        className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+        className="mb-32 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
       >
         <div className="flex items-center justify-center">
           <div className="relative">
@@ -119,7 +119,7 @@ export default function Intro() {
         </motion.h1>
   
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg font-medium"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -128,7 +128,7 @@ export default function Intro() {
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all shadow-lg hover:shadow-xl"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -139,7 +139,7 @@ export default function Intro() {
           </Link>
   
           <a
-            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+            className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 shadow-md hover:shadow-lg"
             href="/CV.pdf"
             download
           >
@@ -148,7 +148,7 @@ export default function Intro() {
           </a>
   
           <a
-            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-md hover:shadow-lg"
             href="https://www.linkedin.com/in/rolanorebelo/"
             target="_blank"
           >
@@ -156,7 +156,7 @@ export default function Intro() {
           </a>
   
           <a
-            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition-all cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 shadow-md hover:shadow-lg"
             href="https://github.com/rolanorebelo/"
             target="_blank"
           >
