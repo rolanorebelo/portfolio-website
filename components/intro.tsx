@@ -114,7 +114,22 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">Hello, I&apos;m Rolano. </span> 
+          <span className="font-bold block">
+            <motion.span
+              className="bg-gradient-to-r from-blue-600 via-purple-500 to-blue-600 bg-clip-text text-transparent bg-[length:200%_auto] dark:from-blue-400 dark:via-purple-400 dark:to-blue-400 inline-block"
+              animate={{ backgroundPosition: ["0% center", "200% center"] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
+            >
+              Hello, I&apos;m Rolano.
+            </motion.span>
+            <motion.span
+              className="inline-block ml-2"
+              animate={{ rotate: [0, 14, -8, 14, -4, 10, 0, 0] }}
+              transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1, ease: "easeInOut" }}
+            >
+              👋
+            </motion.span>
+          </span>
           <span className="">I&apos;m a{" "}<RoleText /> 
           with <span className="font-bold">3+ years</span> of experience.</span>
           <span className="block">I enjoy building <span className="italic">apps</span>.</span>
