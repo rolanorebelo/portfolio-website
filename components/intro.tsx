@@ -15,9 +15,9 @@ const RoleText = () => {
     const [textWidth, setTextWidth] = useState(0);
     const textRef = useRef<HTMLSpanElement | null>(null);
     const texts = [
-      { role: 'Software Engineer', color: '#06b6d4' }, 
+      { role: 'Developer', color: '#06b6d4' }, 
       { role: 'Problem Solver', color: '#22c55e' },   
-      { role: 'Innovator', color: '#fbbf24' },   
+      { role: 'Learner', color: '#fbbf24' },   
     ];
   
     useEffect(() => {
