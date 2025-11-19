@@ -13,8 +13,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 const RoleText = () => {
     const [textIndex, setTextIndex] = useState(0);
     const [textWidth, setTextWidth] = useState(0);
-    const [isSmallScreen, setIsSmallScreen] = useState(false);
-    const textRef = useRef<HTMLSpanElement | null>(null); // Proper typing for ref
+    const textRef = useRef<HTMLSpanElement | null>(null);
     const texts = [
       { role: 'Software Engineer', color: '#06b6d4' }, 
       { role: 'Problem Solver', color: '#22c55e' },   
@@ -23,11 +22,11 @@ const RoleText = () => {
   
     useEffect(() => {
       const interval = setInterval(() => {
-        setTextIndex(prevIndex => (prevIndex + 1) % texts.length);
-      }, 3000); // Change text every 3 seconds
+        setTextIndex((prevIndex: number) => (prevIndex + 1) % texts.length);
+      }, 3000);
     
       return () => clearInterval(interval);
-    }, [texts.length]); // Include texts.length in the dependency array
+    }, [texts.length]);
     
 
     useEffect(() => {
@@ -36,37 +35,28 @@ const RoleText = () => {
       }
     }, [textIndex]);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setIsSmallScreen(window.innerWidth < 640); // Set breakpoint for small screens (sm: 640px in Tailwind)
-      };
-      window.addEventListener("resize", handleResize);
-      handleResize(); // Check screen size initially
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
     return (
       <motion.span
-      className="relative inline-block w-full sm:w-auto" // Make width responsiv
-      style={{
-        width: textWidth,
-        marginBottom: isSmallScreen ? "1.6rem" : "2.4rem",
-        marginRight: "0.5rem",
-      }} // Set the width dynamically
-        initial={{ width: 0 }} // Start width at 0
-        animate={{ width: textWidth }} // Animate width to the current text width
-        transition={{ duration: 0.5 }} // Adjust duration as needed
+        className="relative inline-block align-bottom"
+        style={{
+          width: textWidth,
+          height: "1.5em",
+          marginRight: "0.5rem",
+        }}
+        initial={{ width: 0 }}
+        animate={{ width: textWidth }}
+        transition={{ duration: 0.5 }}
       >
-        <AnimatePresence>
+        <AnimatePresence mode="wait">
           <motion.span
             key={texts[textIndex].role}
-            initial={{ opacity: 0, x: 20 }} // Start with a slight horizontal offset
-            animate={{ opacity: 1, x: 0 }} // Move to normal position
-            exit={{ opacity: 0, x: -20 }} // Exit with a slight horizontal offset
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            style={{ color: texts[textIndex].color }} // Set the text color
-            className="absolute top-0 left-0 text-center sm:text-left" // Center text on small screens
-            ref={textRef} // Ref to measure the width
+            style={{ color: texts[textIndex].color }}
+            className="absolute top-0 left-0 whitespace-nowrap"
+            ref={textRef}
           >
             {texts[textIndex].role}
           </motion.span>
