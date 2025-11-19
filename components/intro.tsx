@@ -12,8 +12,6 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 const RoleText = () => {
     const [textIndex, setTextIndex] = useState(0);
-    const [textWidth, setTextWidth] = useState(0);
-    const textRef = useRef<HTMLSpanElement | null>(null);
     const texts = [
       { role: 'Developer', color: '#06b6d4' }, 
       { role: 'Problem Solver', color: '#22c55e' },   
@@ -26,27 +24,16 @@ const RoleText = () => {
       }, 3000);
     
       return () => clearInterval(interval);
-    }, [texts.length]);
-    
-
-    useEffect(() => {
-      if (textRef.current) {
-        setTextWidth(textRef.current.offsetWidth);
-      }
-    }, [textIndex]);
+    }, []);
 
     return (
       <motion.span
-        className="relative inline-block align-bottom"
-        style={{
-          width: textWidth,
-          height: "1.5em",
-          marginRight: "0.5rem",
-        }}
-        initial={{ width: 0 }}
-        animate={{ width: textWidth }}
-        transition={{ duration: 0.5 }}
+        className="relative inline-block align-bottom h-[1.5em] mr-2"
+        layout
+        transition={{ duration: 0.3, ease: "easeInOut" }}
       >
+        <span className="opacity-0 invisible whitespace-nowrap">{texts[textIndex].role}</span>
+        
         <AnimatePresence mode="wait">
           <motion.span
             key={texts[textIndex].role}
@@ -56,7 +43,6 @@ const RoleText = () => {
             transition={{ duration: 0.5 }}
             style={{ color: texts[textIndex].color }}
             className="absolute top-0 left-0 whitespace-nowrap"
-            ref={textRef}
           >
             {texts[textIndex].role}
           </motion.span>
