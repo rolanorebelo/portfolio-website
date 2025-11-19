@@ -55,7 +55,7 @@ export default function Experience() {
                     alt="Icon"
                     width={60}
                     height={60}
-                    className="rounded-full object-cover border border-gray-300 dark:border-gray-700 bg-white"
+                    className="rounded-full object-contain p-2 bg-white dark:bg-white/90 shadow-lg"
                   />
                 }
                 iconStyle={{

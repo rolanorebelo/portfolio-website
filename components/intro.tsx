@@ -103,7 +103,7 @@ export default function Intro() {
                 height="256"
                 quality="95"
                 priority={true}
-                className="h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover border-[0.35rem] border-white shadow-2xl hover:scale-105 transition-transform duration-300"
+                className="h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover shadow-[0_0_40px_rgba(0,0,0,0.3)] hover:shadow-[0_0_60px_rgba(0,0,0,0.4)] hover:scale-110 transition-all duration-300 dark:shadow-[0_0_40px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_0_60px_rgba(255,255,255,0.3)]"
               />
             </motion.div>
           </div>
@@ -114,7 +114,7 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold block ">Hello, I&apos;m Rolano. </span> 
+          <span className="font-bold block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:to-purple-400">Hello, I&apos;m Rolano. </span> 
           <span className="">I&apos;m a{" "}<RoleText /> 
           with <span className="font-bold">3+ years</span> of experience.</span>
           <span className="block">I enjoy building <span className="italic">apps</span>.</span>
