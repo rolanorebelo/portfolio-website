@@ -90,18 +90,20 @@ export default function Intro() {
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
-                type: "tween",
-                duration: 0.2,
+                type: "spring",
+                stiffness: 125,
+                delay: 0.1,
+                duration: 0.7,
               }}
             >
               <Image
                 src="/profilepic.jpg"
-                alt="Ricardo portrait"
-                width="192"
-                height="192"
+                alt="Rolano portrait"
+                width="256"
+                height="256"
                 quality="95"
                 priority={true}
-                className="h-24 w-24 rounded-full object-cover  shadow-xl"
+                className="h-32 w-32 sm:h-40 sm:w-40 rounded-full object-cover border-[0.35rem] border-white shadow-2xl hover:scale-105 transition-transform duration-300"
               />
             </motion.div>
           </div>
