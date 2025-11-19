@@ -16,9 +16,9 @@ const RoleText = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const textRef = useRef<HTMLSpanElement | null>(null); // Proper typing for ref
     const texts = [
-      { role: 'developer', color: '#06b6d4' }, // Tomato
-      { role: 'learner', color: '#22c55e' },   // SteelBlue
-      { role: 'thinker', color: '#fbbf24' },   // LimeGreen
+      { role: 'Software Engineer', color: '#06b6d4' }, 
+      { role: 'Problem Solver', color: '#22c55e' },   
+      { role: 'Innovator', color: '#fbbf24' },   
     ];
   
     useEffect(() => {
@@ -131,7 +131,7 @@ export default function Intro() {
             </motion.span>
           </span>
           <span className="">I&apos;m a{" "}<RoleText /> 
-          with <span className="font-bold">3+ years</span> of experience.</span>
+          with <span className="font-bold">4+ years</span> of experience.</span>
           <span className="block">I enjoy building <span className="italic">apps</span>.</span>
         </motion.h1>
   

@@ -116,7 +116,7 @@ export const educationData = [
       "Built a responsive AI-driven tool using OCR and vector databases to process lecture content. Integrated LangChain and LLMs to enable real-time AI-driven conversations for students. Developed a retro-style quiz generator using NLP to improve knowledge retention.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "FastAPI", "Azure", "LangChain", "NLP"],
     imageUrl: learning,
-    demoLink: "",
+    demoLink: "https://youtu.be/6MMHFfGOgBs",
     githubLink: "",
   },
   {
