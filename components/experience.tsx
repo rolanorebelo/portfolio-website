@@ -55,13 +55,18 @@ export default function Experience() {
                     alt="Icon"
                     width={60}
                     height={60}
-                    className="rounded-full object-contain p-2 bg-white dark:bg-white/90 shadow-lg"
+                    className="rounded-full border border-gray-300 dark:border-gray-700 bg-white"
+                    style={{ width: "80%", height: "80%", objectFit: "contain" }}
                   />
                 }
                 iconStyle={{
                   background:
                     theme === "light" ? "white" : "rgba(255, 255, 255, 0.15)",
                   fontSize: "1.5rem",
+                  overflow: "hidden",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                 }}
                
               >

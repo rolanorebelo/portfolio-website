@@ -9,6 +9,8 @@ import dlink from "@/public/dlink.jpg";
 import wipro from "@/public/wipro.png";
 import phylacticsLogo from "@/public/phylactics.png"; // Add your logo image to public/
 import replyquickLogo from "@/public/replyquickai.jpeg"; // Add your logo image to public/
+import kpmgLogo from "@/public/kpmg.jpg";
+import coherenceLogo from "@/public/coherence.jpg";
 import fitness from "@/public/fitness_app.jpeg"
 import learning from "@/public/learning.jpg"
 import fitfindrImg from "@/public/fitfindr.png";
@@ -45,6 +47,22 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Web Application Developer",
+    location: "KPMG US · Contract, Dallas, TX (Remote)",
+    description:
+      "Contributing to the InfoX / Data Catalyst platform, building scalable web applications that support enterprise-grade data ingestion, processing, and analytics workflows. Developing modern, responsive UIs using Next.js, React, and TypeScript, with a strong focus on usability, performance, and accessibility. Designing and integrating backend APIs using FastAPI and Python. Working with Databricks, PostgreSQL, and cloud-native storage to support large-scale data pipelines, audit logging, and metadata tracking. Implementing clean architecture patterns and collaborating with cross-functional teams to align technical solutions with business requirements.",
+    icon: kpmgLogo,
+    date: "Dec 2025 – Present",
+  },
+  {
+    title: "Frontend Developer",
+    location: "Coherence Protocol · Part-time, Renton, WA (Remote)",
+    description:
+      "Built frontend systems for authority-gated execution and decision review workflows. Implemented deterministic UI state transitions aligned with signed backend receipts and execution boundaries. Developed clear separation between presentation, client state, and execution intent to prevent ambiguous actions. Integrated frontend validation and error surfaces for safety-critical operations. Collaborated closely with backend and infrastructure engineers to ensure correctness, traceability, and debuggability across system boundaries.",
+    icon: coherenceLogo,
+    date: "Nov 2025 – Present",
+  },
     {
     title: "Software Developer Intern",
     location: "ReplyQuickAI, Remote / Florida, USA",
@@ -216,7 +234,12 @@ export const skillsData = [
       "LangChain",
   "GPT-4o",
   "Supabase",
-  "Twilio"
+  "Twilio",
+  "FastAPI",
+  "Databricks",
+  "Docker",
+  "React Native",
+  "Firebase"
   ] as const;
 
 export const awardsData = [
